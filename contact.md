@@ -11,7 +11,7 @@ author:
 
 	# Goosewood at most social media
 
-1. Katherine Huang Lowell
+1. Katherine Huang
 
 	#
 
@@ -27,7 +27,7 @@ author:
 
 	#
 
-1. The Other Guy
+1. Forest Pwu
 
 	#
 
