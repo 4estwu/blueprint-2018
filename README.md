@@ -17,7 +17,12 @@
 ### https://github.com/lecoq/genome
 ### GPL-2 license so it’s fine to use
 
-
+# Dependecies
+unirest
+	\# pip2 install unirest
+djangoapp
+	\# pip install django
+A genomelink api
 
 # Functionality:
 
