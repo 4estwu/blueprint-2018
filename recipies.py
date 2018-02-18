@@ -14,7 +14,3 @@ class recipies(object):
     "Accept": "application/json"
   }
 )
-        print(self.response.body)
-
-foods = ['cheese', 'salmon', 'spinich']
-recipies(foods,5)
