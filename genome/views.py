@@ -4,19 +4,29 @@ from .models import Trait
 import genomelink
 
 def index(request):
-	# WORKS IF THERE'S 1 TRAIT ONLY
 	# gets list of traits
-	traits_list = Trait.objects.all()
+	traits_list_object = Trait.objects.all()
 
+	traits_list = [t.trait_name for t in traits_list_object]
+
+	context = {
+		'traits_list': traits_list,
+	}
+
+	return render(request, 'genome/index.html', context)
+'''
 	# join traits into list
-	output = ', '.join([t.trait_name for t in traits_list])
+	traits_list = ', '.join([t.trait_name for t in traits_list])
 
-	# get corresponding report
-	traits_output = genomelink.Report.fetch(name=output, population='european', token='GENOMELINKTEST001').summary['text']
+	outputs_list = []
+
+	for trait in traits_list:
+		outputs_list.append( genomelink.Report.fetch(name=output, population='european', token='GENOMELINKTEST001').summary['text'] )
+
+	trait_dict = {}
 
 	context = {
 		'traits_list': traits_list,
 		'traits_output': traits_output,
 	}
-
-	return render(request, 'genome/index.html', context)
+'''

@@ -1,4 +1,4 @@
-{% if traits_list %}
+<!--{% if traits_list %}
     <ul>
     {% for trait in traits_list %}
         <li>{{ trait.trait_name }}: {{ traits_output }}</li>
@@ -6,4 +6,13 @@
     </ul>
 {% else %}
     <p>No traits are available.</p>
+{% endif %}-->
+
+{% if traits_list %}
+	<ul>
+		{% for trait in traits_list %}
+		<li>{{ trait }}</li>
+		{% endfor %}
+	</ul>
+{% else %}
 {% endif %}
