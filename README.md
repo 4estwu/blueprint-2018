@@ -2,9 +2,6 @@
 
 
 # Genome Link API
-Client ID: p0LRC0Mi57EUEGfc2NZvKAeXBVeanFniIyxNYRFC
-Client Secret: VtLr55D1aU2Z5JLUMePKvIKJnv2LeWfytTakDvrvc7V7lweVABesM4hEjBqdnrQHwHuzby00LgcnCEHDeayOPqNc8mvJ2AHRBmvrgtPQu7YRcHBt5n8DOqH7tDXF0Cap
-Redirect uris (could be wrong): http://127.0.0.1:5000/callback
 
 
 # API for Pulling Recipes Based on Ingredient List
