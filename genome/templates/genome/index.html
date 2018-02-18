@@ -1,18 +1,44 @@
-<!--{% if traits_list %}
-    <ul>
-    {% for trait in traits_list %}
-        <li>{{ trait.trait_name }}: {{ traits_output }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No traits are available.</p>
-{% endif %}-->
+{% load static %}
 
-{% if traits_list %}
-	<ul>
-		{% for trait in traits_list %}
-		<li>{{ trait }}</li>
-		{% endfor %}
-	</ul>
-{% else %}
-{% endif %}
+<link rel="stylesheet" type="text/css" href="{% static 'genome/normalize.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'genome/skeleton.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'genome/style.css' %}" />
+
+<div class="container">
+	<header class="row">
+		<h1>Genome App</h1>
+	</header>
+
+	<div class="row">
+		<table class="u-full-width">
+			<thead>
+				<tr>
+					<th><h2>Traits</h2></th>
+					<th><h2>Levels</h2></th>
+					<th><h2>Foods</h2></th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for trait in traits_name_list %}
+				<tr>
+					<th>
+						<h3>{{ trait }}</h3>
+						<p>Description of trait and its significance</p>
+					</th>
+					<th>
+						{{ traits_report_list | first }}
+					</th>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<ul>
+	
+</ul>
+
+<ul>
+	
+</ul>

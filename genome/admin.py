@@ -1,7 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Trait, Population
+from .models import Trait
 
 admin.site.register(Trait)
-admin.site.register(Population)
